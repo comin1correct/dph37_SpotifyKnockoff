@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<!--make sure persistence-unit name equals name of the project -->
+	<persistence-unit name="dph37_SpotifyKnockoff">
+	
+		<!-- if class is inside package, it must be prefixed -->
+		<class>edu.pitt.IS18.SpotifyKnockoff.Song</class>
+		<class>edu.pitt.IS18.SpotifyKnockoff.Artist</class>
+		<class>edu.pitt.IS18.SpotifyKnockoff.Album</class>
+	
+	
+		<properties>
+		
+			<!-- database connection: server address, name, user, password, driver(SQL/ Microsoft SQL, Oracle) -->
+			<property name = "javax.persistence.jdbc.url" value = "jdbc:mysql://sis-teach-01.sis.pitt.edu:3306/spotify_knockoff"/>
+			<property name = "javax.persistence.jdbc.user" value = "spotifyUser"/>
+			<property name = "javax.persistence.jdbc.password" value = "spotifyUser123"/>
+			<property name = "javax.persistence.jdbc.driver" value = "com.mysql.jdbc.Driver"/>
+			
+			<!-- verbose logging output of connections, query, etc... -->
+			<property name = "eclipselink.logging.level" value = "FINE"/>
+			
+			<!-- Caution: Allows JPA to create tables in database if they don't exist on initial search -->
+			<!-- <property name="eclipselink.ddl-generation" value="create-tables"/> -->
+			
+		</properties>
+	</persistence-unit>
+</persistence>
+
+<!-- JPA week6:
+	* The persistence.xml is treated as an external properties file from which the compiled code reads.
+	* So no need to changes to the java core application, recompile, Only need to update xml file. 
+	*
+	*
+ -->

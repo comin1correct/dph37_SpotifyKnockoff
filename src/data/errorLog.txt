@@ -1,0 +1,11 @@
+Thu Feb 01 00:23:59 EST 2018, Table 'spotify_knockoff.songs' doesn't exist
+Fri Feb 02 10:51:53 EST 2018, Cannot delete or update a parent row: a foreign key constraint fails (`spotify_knockoff`.`song_artist`, CONSTRAINT `fk_song_has_artist_song` FOREIGN KEY (`fk_song_id`) REFERENCES `song` (`song_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Fri Feb 02 10:51:53 EST 2018, Cannot delete or update a parent row: a foreign key constraint fails (`spotify_knockoff`.`song_artist`, CONSTRAINT `fk_song_has_artist_artist1` FOREIGN KEY (`fk_artist_id`) REFERENCES `artist` (`artist_id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Wed Feb 07 19:45:46 EST 2018, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'acc'%' at line 1
+Wed Feb 07 19:47:11 EST 2018, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'Easy'%' at line 1
+Wed Feb 07 19:49:00 EST 2018, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% 'Hot Dogs' %' at line 1
+Wed Feb 07 19:49:42 EST 2018, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% 'hot' %' at line 1
+Wed Feb 07 20:02:30 EST 2018, Table 'spotify_knockoff.Artist' doesn't exist
+Wed Feb 07 23:03:11 EST 2018, Unknown column 'firs_name' in 'where clause'
+Wed Feb 07 23:03:25 EST 2018, Unknown column 'firs_name' in 'where clause'
+Wed Feb 07 23:03:26 EST 2018, Unknown column 'firs_name' in 'where clause'
